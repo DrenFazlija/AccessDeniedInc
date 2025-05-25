@@ -131,10 +131,10 @@ We only ask that you acknowledge the original work by citing our paper when usin
 ## Citation
 If you use this code in your research, please cite our paper:
 ```bibtex
-@article{accessdenied2025,
-  title={ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness},
-  author={Fazlija, Dren and others},
-  journal={ACL 2025 Findings},
-  year={2025}
+@inproceedings{fazlija2025accessdeniedinc,
+      title={ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness},
+      author = {Fazlija, Dren and Orlov, Arkadij and Sikdar, Sandipan},
+      booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
+      year={2025}
 }
 ```

@@ -22,7 +22,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/drenfazlija">Dren Fazlija</a><sup>1</sup>,
   <a href="https://www.linkedin.com/in/arkadijorlov/">Arkadij Orlov</a><sup>2</sup>, 
-  <a href="https://www.linkedin.com/in/sandipan-sikdar-52669394/">Sandipan Sikdar</a><sup>1</sup>, 
+  <a href="https://www.linkedin.com/in/sandipan-sikdar-52669394/">Sandipan Sikdar</a><sup>1</sup> 
   <br>
   <sup>1</sup> L3S Research Center
   <br>
@@ -32,10 +32,10 @@
 ### Citation
 ```bibtex
 @inproceedings{fazlija2025accessdeniedinc,
-      title={{ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness}},
+      title={ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness},
       author = {Fazlija, Dren and Orlov, Arkadij and Sikdar, Sandipan},
       booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
-      year={2025},
+      year={2025}
 }
 ```
 
