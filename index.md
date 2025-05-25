@@ -1,5 +1,7 @@
 # ACCESS DENIED INC
 
+[![license badge](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 <p align="center">
   <img src="./images/l3s-logo-c.webp" align="middle" width="200"/>
 </p>
