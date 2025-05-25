@@ -1,0 +1,11 @@
+langchain==0.3.14
+langfuse==2.57.11
+names_dataset==3.1.0
+numpy==1.26.4
+pandas==2.2.3
+regex==2024.11.6
+Requests==2.32.3
+tqdm==4.67.1
+openai==1.82.0
+huggingface_hub==0.32.0
+ipykernel==6.29.5

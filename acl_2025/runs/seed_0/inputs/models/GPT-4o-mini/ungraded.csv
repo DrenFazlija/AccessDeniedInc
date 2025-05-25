@@ -1,0 +1,2 @@
+id,output,desired_output,truth,grade,questionnaire_loop,questionnaire,malicious,missing
+60a1f2f7-f4dd-486e-9f05-0bcf73c1415c,Assets,Renewables,Renewables,-1,from_supervisor,from_supervisor_department,False,False

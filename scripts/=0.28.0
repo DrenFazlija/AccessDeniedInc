@@ -1,0 +1,21 @@
+Requirement already satisfied: huggingface_hub in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (0.27.1)
+Collecting huggingface_hub
+  Downloading huggingface_hub-0.28.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: filelock in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (3.16.1)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (2024.12.0)
+Requirement already satisfied: packaging>=20.9 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (24.2)
+Requirement already satisfied: pyyaml>=5.1 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (6.0.2)
+Requirement already satisfied: requests in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (2.32.3)
+Requirement already satisfied: tqdm>=4.42.1 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (4.67.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from huggingface_hub) (4.12.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from requests->huggingface_hub) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from requests->huggingface_hub) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from requests->huggingface_hub) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/dren.fazlija/.conda/envs/accessdenied/lib/python3.10/site-packages (from requests->huggingface_hub) (2024.12.14)
+Downloading huggingface_hub-0.28.1-py3-none-any.whl (464 kB)
+Installing collected packages: huggingface_hub
+  Attempting uninstall: huggingface_hub
+    Found existing installation: huggingface-hub 0.27.1
+    Uninstalling huggingface-hub-0.27.1:
+      Successfully uninstalled huggingface-hub-0.27.1
+Successfully installed huggingface_hub-0.28.1

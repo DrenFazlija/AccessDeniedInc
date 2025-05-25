@@ -1,9 +1,11 @@
-# Access Denied Inc: The First Benchmark Environment for Sensitivity Awareness
+# ACCESS DENIED INC
 
-    @misc{Fazlija2025Access,
-          author = {Fazlija, Dren and Orlov, Arkadij and Sikdar, Sandipan},
-          title = {ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness},
-          month = july,
-          year = 2025,
-          publisher = {ACL}
-    }
+### Citation
+```
+@inproceedings{fazlija2025accessdeniedinc,
+      title={{ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness}},
+      author = {Fazlija, Dren and Orlov, Arkadij and Sikdar, Sandipan},
+      booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
+      year={2025},
+}
+```
