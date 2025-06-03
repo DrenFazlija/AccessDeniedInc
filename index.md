@@ -12,7 +12,7 @@
 ## 🔒 ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness
 
 <p align="center">
-  <span style="font-size: 24px; font-weight: bold;">The manuscript will be published soon!</span>
+  <a href="https://arxiv.org/abs/2506.00964" style="font-size: 24px; text-decoration: none">The Preprint is now Online!</a>
 </p>
 
 <p align="center">
@@ -20,13 +20,15 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/drenfazlija">Dren Fazlija</a><sup>1</sup>,
-  <a href="https://www.linkedin.com/in/arkadijorlov/">Arkadij Orlov</a><sup>2</sup>, 
+  <a href="https://www.linkedin.com/in/drenfazlija">Dren Fazlija</a><sup>1,*</sup>,
+  <a href="https://www.linkedin.com/in/arkadijorlov/">Arkadij Orlov</a><sup>2,*</sup>, 
   <a href="https://www.linkedin.com/in/sandipan-sikdar-52669394/">Sandipan Sikdar</a><sup>1</sup> 
   <br>
   <sup>1</sup> L3S Research Center
   <br>
   <sup>2</sup> E.ON Grid Solutions
+  <br>
+  <sup>*</sup> Equal Contributions
 </p>
 
 ### Citation
