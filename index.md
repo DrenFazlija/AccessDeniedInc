@@ -47,9 +47,9 @@
 * **Malicious-request stress-test:** Grok-2 answers safely in **65.48%** cases but still leaks **33.48%**; Llama-3 70B leaks in **74.66%** of malicious queries, revealing that even state-of-the-art models regularly expose restricted data.
 * **Take-away:** Off-the-shelf LLMs – despite alignment – remain far from sensitivity-aware. Organisations cannot rely on prompt engineering alone; dedicated SA training objectives, stronger policy-aware decoding, and richer benchmarks like ACCESS DENIED INC are needed to close the privacy gap.
 
-### Failure Rates of Assessed Models
-> [!IMPORTANT]
-> The original figure displayed in our manuscript is wrong! (Though the values outlined in Table 2 are correct)
+## Failure Rates of Assessed Models (Corrected)
+
+The original figure displayed in our manuscript is wrong! (Though the values outlined in Table 2 are correct)
 
 
 <p align="center">
