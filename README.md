@@ -1,5 +1,9 @@
 # ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness
 
+<p align="center">
+  <img src="./images/accessdeniedinc.png" align="middle" width="600"/>
+</p>
+
 ## Table of Contents
 
 1. **[Setting up the Environment](#setting-up-the-environment)**
@@ -131,10 +135,23 @@ We only ask that you acknowledge the original work by citing our paper when usin
 ## Citation
 If you use this code in your research, please cite our paper:
 ```bibtex
-@inproceedings{fazlija2025accessdeniedinc,
-      title={ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness},
-      author = {Fazlija, Dren and Orlov, Arkadij and Sikdar, Sandipan},
-      booktitle={Findings of the Association for Computational Linguistics: ACL 2025},
-      year={2025}
+@inproceedings{fazlija-etal-2025-access,
+    title = "{ACCESS} {DENIED} {INC}: The First Benchmark Environment for Sensitivity Awareness",
+    author = "Fazlija, Dren  and
+      Orlov, Arkadij  and
+      Sikdar, Sandipan",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.684/",
+    pages = "13221--13240",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Large language models (LLMs) are increasingly becoming valuable to corporate data management due to their ability to process text from various document formats and facilitate user interactions through natural language queries. However, LLMs must consider the sensitivity of information when communicating with employees, especially given access restrictions. Simple filtering based on user clearance levels can pose both performance and privacy challenges. To address this, we propose the concept of sensitivity awareness (SA), which enables LLMs to adhere to predefined access rights rules. In addition, we developed a benchmarking environment called ACCESS DENIED INC to evaluate SA. Our experimental findings reveal significant variations in model behavior, particularly in managing unauthorized data requests while effectively addressing legitimate queries. This work establishes a foundation for benchmarking sensitivity-aware language models and provides insights to enhance privacy-centric AI systems in corporate environments."
 }
 ```
