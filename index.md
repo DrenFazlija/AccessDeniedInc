@@ -5,13 +5,10 @@
 [![arXiv](https://img.shields.io/badge/Preprint-2506.00964-%23B31B1B?logo=arxiv)](https://arxiv.org/abs/2506.00964)
 [![ACL](https://img.shields.io/badge/Proceedings-ACL%202025%20(Findings)-purple)](https://aclanthology.org/2025.findings-acl.684/)
 
-
 <p align="center">
   <img src="images/l3s-logo-c.webp" align="middle" width="200" style="margin-right:40px; margin-bottom:20px;"/>
   <img src="images/eon.png" align="middle" width="200" style="margin-right:40px; margin-bottom:20px;">
 </p>
-
-
 
 ### 📣 ACCESS DENIED INC accepted at ACL 2025 (Findings)
 ## 🔒 ACCESS DENIED INC: The First Benchmark Environment for Sensitivity Awareness
@@ -37,26 +34,32 @@
   <em>Large language models (LLMs) are increasingly becoming valuable to corporate data management due to their ability to process text from various document formats and facilitate user interactions through natural language queries. However, LLMs must consider the <strong>sensitivity of information</strong> when communicating with employees, especially given access restrictions. Simple filtering based on user clearance levels can pose both performance and privacy challenges. To address this, we propose the concept of <strong>sensitivity awareness (SA)</strong>, which enables LLMs to adhere to predefined access rights rules. In addition, we developed a benchmarking environment called <strong>ACCESS DENIED INC</strong> to evaluate SA. Our experimental findings reveal significant variations in model behavior, particularly in managing unauthorized data requests while effectively addressing legitimate queries. This work establishes a foundation for benchmarking sensitivity-aware language models and provides insights to enhance privacy-centric AI systems in corporate environments.</em>
 </details>
 
+---
+
+## Bridging Data Privacy and AI Agent Security
+
+While traditional evaluation benches treat data privacy and prompt injection as distinct issues, deploying tool-integrated AI agents collapses these domains. 
+
+Recent agent security literature (e.g., *SudoBench*, 2026) highlights that frontier models fail to respect **Contextual Authorization** when a user or environment context is flipped. **ACCESS DENIED INC** was designed to benchmark this exact failure mode. By evaluating an LLM’s ability to handle localized Role-Based Access Control (RBAC) rules directly during token generation, this framework provides a foundational testing ground for securing agentic execution flows against **Confused Deputy vulnerabilities** and scope escalation.
+
+---
 
 ## Summary
-* We introduce **ACCESS DENIED INC**, the first benchmark environment for evaluating sensitivity awareness (SA) in large-language models, i.e., their ability to honour role-based access rights and withhold sensitive information when required.
+* We introduce **ACCESS DENIED INC**, the first benchmark environment for evaluating sensitivity awareness (SA) in large-language models, i.e., their ability to honour role-based access rights and withhold sensitive information when required, mitigating what the agent security community terms **Confused Deputy vulnerabilities**.
 * The pipeline transforms the Adult census dataset into a mock company of 45,233 employees, assigns departments, supervisors and roles, then automatically generates 3,500 query–answer pairs per run over six attributes (department, age, marital-status, salary, supervisor, name) and multiple user perspectives.
-* Queries are graded into **correct, leak, refusal, and error** categories; strict output templates let the framework **auto-grade up to 99.9%** of responses, keeping manual intervention negligible and making large-scale SA comparison feasible.
-* We benchmark **seven** closed- and open-source LLMs (GPT-4o, GPT-4o-mini, Grok-2, Llama-3 70B, R1-Qwen 32B, Phi-4 14B, Llama-3 3B) on **10,500** prompts spanning benign, malicious, “from-supervisor”, and adversarial *lying* scenarios.
+* Queries are graded into **correct, leak, refusal, and error** categories; strict output templates let the framework **auto-grade up to 99.9%** of responses, keeping manual intervention negligible and making large-scale SA and contextual authorization comparison feasible.
+* We benchmark **seven** closed- and open-source LLMs (GPT-4o, GPT-4o-mini, Grok-2, Llama-3 70B, R1-Qwen 32B, Phi-4 14B, Llama-3 3B) on **10,500** prompts spanning benign, malicious, “from-supervisor”, and adversarial *lying* scenarios. This effectively maps to the **contextual flipped-pair evaluations** required for modern agent safety.
 * **Overall SA correctness:** Grok-2 80.50%, GPT-4o 70.72%, Llama-3 70B 60.81%; Grok-2 shows only 0.22% formatting errors, while Llama-3 70B records 38.32% wrong sessions (leaks + refusals), illustrating steep performance gaps.
-* **Malicious-request stress-test:** Grok-2 answers safely in **65.48%** cases but still leaks **33.48%**; Llama-3 70B leaks in **74.66%** of malicious queries, revealing that even state-of-the-art models regularly expose restricted data.
-* **Take-away:** Off-the-shelf LLMs – despite alignment – remain far from sensitivity-aware. Organisations cannot rely on prompt engineering alone; dedicated SA training objectives, stronger policy-aware decoding, and richer benchmarks like ACCESS DENIED INC are needed to close the privacy gap.
+* **Malicious-request stress-test:** Grok-2 answers safely in **65.48%** cases but still leaks **33.48%**; Llama-3 70B leaks in **74.66%** of malicious queries, revealing that even state-of-the-art models regularly fail to maintain dynamic access control.
+* **Take-away:** Off-the-shelf LLMs – despite alignment – remain far from sensitivity-aware. Organisations cannot rely on prompt engineering alone; dedicated SA training objectives, stronger policy-aware decoding, and richer benchmarks like ACCESS DENIED INC are needed to close the contextual privacy gap.
 
 ## Failure Rates of Assessed Models (Corrected)
 
 The original figure displayed in our manuscript is wrong! (Though the values outlined in Table 2 are correct)
 
-
 <p align="center">
   <img src="./images/failure_rates.png" align="middle" width="600"/>
 </p>
-
-
 
 ## Citation
 ```bibtex
@@ -74,7 +77,7 @@ The original figure displayed in our manuscript is wrong! (Though the values out
     year = "2025",
     address = "Vienna, Austria",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.findings-acl.684/",
+    url = "[https://aclanthology.org/2025.findings-acl.684/](https://aclanthology.org/2025.findings-acl.684/)",
     pages = "13221--13240",
     ISBN = "979-8-89176-256-5",
     abstract = "Large language models (LLMs) are increasingly becoming valuable to corporate data management due to their ability to process text from various document formats and facilitate user interactions through natural language queries. However, LLMs must consider the sensitivity of information when communicating with employees, especially given access restrictions. Simple filtering based on user clearance levels can pose both performance and privacy challenges. To address this, we propose the concept of sensitivity awareness (SA), which enables LLMs to adhere to predefined access rights rules. In addition, we developed a benchmarking environment called ACCESS DENIED INC to evaluate SA. Our experimental findings reveal significant variations in model behavior, particularly in managing unauthorized data requests while effectively addressing legitimate queries. This work establishes a foundation for benchmarking sensitivity-aware language models and provides insights to enhance privacy-centric AI systems in corporate environments."
